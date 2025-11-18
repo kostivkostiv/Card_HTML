@@ -67,7 +67,7 @@ HTML/
 
 ## Screenshot
 
-![Screenshot](image.png)
+![Screenshot](./public/screenshot2.png)
 
 ---
 
