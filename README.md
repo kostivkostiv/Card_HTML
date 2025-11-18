@@ -24,19 +24,6 @@ The main goals of this assignment were:
 
 ---
 
-## Project Structure
-
-HTML/
-└─ src/
-├─ index.html # Main HTML file
-├─ styles.css # CSS styling
-
-└─ public/
-  └─ coffee.png # Sample product image
-
-
----
-
 ## Features
 
 ### Sidebar Search Form (`<aside>`)
