@@ -2,17 +2,19 @@
 
 ## Project Overview
 
-ДЗ #1: Створення базової HTML-структури магазину кави
+**ДЗ #1:** Створення базової HTML-структури магазину кави
 
-Це проста практика для виконання домашнього завдання, у якій я створив стилізовану картку товару за допомогою чистого HTML та інлайн-стилів.  
-Мета роботи - потренувати навички верстки, роботи з семантичними тегами `<article>` та `<section>`, використання зображень та базової типографії.
+This is a simple practice assignment in which I created a styled product card using plain HTML and inline styles.  
+The goal of this work is to practice layout skills, working with semantic tags `<article>` and `<section>`, using images, and basic typography.
+
 
 ## Screenshot
 
 ![Screenshot](./public/screenshot1.png)
 
+---
 
-**Homework #2:** Creating a Product Catalog with Semantic HTML5 Structure
+**ДЗ #2:** Каталог товарів та cемантична структура
 
 This project is a practice exercise to build a coffee product catalog using **HTML5 semantic tags** and CSS for layout and styling.  
 The main goals of this assignment were:
