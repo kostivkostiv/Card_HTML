@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.searchForm {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search__label {
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.search__field {
+  padding: 16px;
+  border: 1px solid black;
+  height: 56px;
+  width: 574px;
+}
+
+.search__selection {
+  padding: 16px;
+  border: 1px solid black;
+  height: 56px;
+  width: 261px;
+  gap: 16px;
+}
+
+.search__option {
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.products {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.products__list {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 16px;
+}
+
+.cardImage {
+  object-fit:cover;
+  object-position: 0px -120px;
+  width: 300px;
+  height: 300px;
+}
+
+.cardHeading {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 150%;
+}
+
+.cardDescription {
+  font-weight: 100;
+  font-size: 125%;
+  color: gray;
+}
+
+.cardPrice {
+  margin:16px 0;
+  font-weight: 500;
+  font-size: 200%;
+}
