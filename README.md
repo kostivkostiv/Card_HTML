@@ -10,7 +10,13 @@ The goal of this work is to practice layout skills, working with semantic tags `
 
 ## Screenshot
 
-![Screenshot](./public/screenshot1.png)
+updated screenshots
+
+![Screenshot](./public/screenshots/scrnsht3.png)
+![Screenshot](./public/screenshots/scrnsht4.png)
+![Screenshot](./public/screenshots/scrnsht5.png)
+![Screenshot](./public/screenshots/scrnsht6.png)
+![Screenshot](./public/screenshots/scrnsht7.png)
 
 ---
 
@@ -41,7 +47,7 @@ The main goals of this assignment were:
 - Each product is an `<article>` inside an `<li>` item.
 - Each product card includes:
   - Image of the coffee product (`<img>`).
-  - Product name (`<h6>`).
+  - Product name (`<h5>`).
   - Short description (`<p>`).
   - Price (`<p>`).
 

@@ -7,10 +7,59 @@
     <title>Document</title>
   </head>
   <body>
-    <aside>
+    <header class="header">
+      <a href="#" class="header__logo">
+        <span class="header__logo--word1">imaji</span>
+        <span class="header__logo--word2">coffee.</span>
+      </a>
+
+      <nav>
+        <ul class="navigation">
+          <li class="navigation__block">
+            <a href="#" class="navigation__page">home</a>
+          </li>
+          <li class="navigation__block">
+            <a href="#" class="navigation__page">story</a>
+          </li>
+          <li class="navigation__block">
+            <a href="#" class="navigation__page">menu</a>
+          </li>
+          <li class="navigation__block">
+            <a href="#" class="navigation__page">space</a>
+          </li>
+          <li class="navigation__block">
+            <a href="#" class="navigation__page">community</a>
+          </li>
+          <li class="navigation__block">
+            <a href="#" class="navigation__page">news</a>
+          </li>
+          <li class="navigation__cart">
+            <a href="#" class="navigation__page cart">cart (2)</a>
+          </li>
+          <li class="navigation__signIn">
+            <a href="#" class="navigation__page singIn">sign in</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="mainHeading">
+        <h1 class="mainHeading__heading">our menu</h1>
+        <p class="mainHeading__paragraph">
+          IMAJI Coffee provides a variety of high quality coffee and drinks and
+          flavors <br />
+          that are suitable for you to support and cheer up your day. We also
+          provide <br />
+          coffee to accompany you at home along with the equipment.
+        </p>
+      </section>
       <form class="searchForm" action="">
         <div class="search">
-          <label class="search__label" for="searchingItem">Search</label>
+          <div class="search__block">
+            <label class="search__label" for="searchingItem">Search</label>
+            <button type="button" class="search__clear search__clear--gray">Clear</button>
+          </div>
           <input
             class="search__field"
             id="searchingItem"
@@ -20,7 +69,10 @@
         </div>
 
         <div class="search">
-          <label class="search__label" for="priceFilter">Price</label>
+          <div class="search__block">
+            <label class="search__label" for="priceFilter">Price</label>
+            <button type="button" class="search__clear search__clear--red">Clear</button>
+          </div>
           <select
             class="search__selection"
             name="Price filter"
@@ -31,7 +83,10 @@
         </div>
 
         <div class="search">
-          <label class="search__label" for="sorting">Sort By</label>
+          <div class="search__block">
+            <label class="search__label" for="sorting">Sort By</label>
+            <button type="button" class="search__clear search__clear--red">Clear</button>
+          </div>
           <select class="search__selection" name="Sorting" id="sorting">
             <option class="search__option" value="best sellings">
               Best Sellings
@@ -39,156 +94,330 @@
           </select>
         </div>
       </form>
-    </aside>
-    <main>
+
+      <section class="menuConfiguration">
+        <a href="#" class="menuConfiguration__button menuConfiguration__active"
+          >Coffee and Baverage</a
+        >
+        <a
+          href="#"
+          class="menuConfiguration__button menuConfiguration__inactive"
+          >Food and snack</a
+        >
+        <a
+          href="#"
+          class="menuConfiguration__button menuConfiguration__inactive"
+          >Imaji coffee at home</a
+        >
+      </section>
+
       <section class="products">
         <ul class="products__list">
-          <li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img1.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img2.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img3.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img4.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img5.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img6.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img7.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
+            <article>
+              <div class="cardImgWrapper">
+                <img
+                  class="cardImage"
+                  src="../public/pictures/Img8.png"
+                  alt="Coffee For Sale"
+                />
+                <div class="sale">sale</div>
+              </div>
+              <h5 class="cardHeading">Iced Americano</h5>
+              <p class="cardDescription">Only at Cafe and Delivery</p>
+              <div class="saleWrapper">
+                <div class="saleWrapper__deal">
+                  <p class="cardPrice">$5.00</p>
+                  <p class="saleWrapper__specialDeal">$6.00</p>
+                </div>
+                <p class="saleWrapper__adv">Get 20% Off in App</p>
+              </div>
+            </article>
+          </li>
+          <li class="products__card">
             <article>
               <img
                 class="cardImage"
-                src="../public/coffee.png"
+                src="../public/pictures/Img9.png"
                 alt="Coffee For Sale"
               />
-              <h6 class="cardHeading">Iced Americano</h6>
+              <h5 class="cardHeading">Iced Americano</h5>
               <p class="cardDescription">Only at Cafe and Delivery</p>
               <p class="cardPrice">$5.00</p>
             </article>
           </li>
-          <li>
+          <li class="products__card">
             <article>
               <img
                 class="cardImage"
-                src="../public/coffee.png"
+                src="../public/pictures/Img10.png"
                 alt="Coffee For Sale"
               />
-              <h6 class="cardHeading">Iced Americano</h6>
+              <h5 class="cardHeading">Iced Americano</h5>
               <p class="cardDescription">Only at Cafe and Delivery</p>
               <p class="cardPrice">$5.00</p>
             </article>
           </li>
-          <li>
+          <li class="products__card">
             <article>
               <img
                 class="cardImage"
-                src="../public/coffee.png"
+                src="../public/pictures/Img11.png"
                 alt="Coffee For Sale"
               />
-              <h6 class="cardHeading">Iced Americano</h6>
+              <h5 class="cardHeading">Iced Americano</h5>
               <p class="cardDescription">Only at Cafe and Delivery</p>
               <p class="cardPrice">$5.00</p>
             </article>
           </li>
-          <li>
+          <li class="products__card">
             <article>
               <img
                 class="cardImage"
-                src="../public/coffee.png"
+                src="../public/pictures/Img12.png"
                 alt="Coffee For Sale"
               />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
-              <p class="cardDescription">Only at Cafe and Delivery</p>
-              <p class="cardPrice">$5.00</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                class="cardImage"
-                src="../public/coffee.png"
-                alt="Coffee For Sale"
-              />
-              <h6 class="cardHeading">Iced Americano</h6>
+              <h5 class="cardHeading">Iced Americano</h5>
               <p class="cardDescription">Only at Cafe and Delivery</p>
               <p class="cardPrice">$5.00</p>
             </article>
           </li>
         </ul>
       </section>
+
+      <a class="loadMore" href="#">Load more</a>
     </main>
+
+    <footer>
+      <section class="footerInfo">
+        <h6 class="footerInfo__heading">our location</h6>
+
+        <div class="footerInfo__paragraph">
+          <p class="footerInfo__text text1">
+            Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124
+          </p>
+          <p class="footerInfo__text text2">
+            Customer Service
+            <span class="footerInfo__detailInfo">+6282-2876-6862</span>
+          </p>
+          <p class="footerInfo__text text2">
+            We Are Open from
+            <span class="footerInfo__detailInfo">Sun - Mon 10 AM - 22 PM</span>
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="socialMedia">
+          <div class="socialMedia__messengers">
+            <img
+              class="socialMedia__icon"
+              src="../public/icons/spotify.svg"
+              alt=""
+            />
+            <img
+              class="socialMedia__icon"
+              src="../public/icons/instagram.svg"
+              alt=""
+            />
+            <img
+              class="socialMedia__icon"
+              src="../public/icons/tiktok.svg"
+              alt=""
+            />
+            <img
+              class="socialMedia__icon"
+              src="../public/icons/youtube.svg"
+              alt=""
+            />
+            <img
+              class="socialMedia__icon"
+              src="../public/icons/twitter.svg"
+              alt=""
+            />
+            <img
+              class="socialMedia__icon"
+              src="../public/icons/telegram.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="socialMedia__download">
+            <p class="socialMedia__paragraph">Delivery Order</p>
+            <img
+              class="socialMedia__downloadIcons"
+              src="../public/ios-android/app-store.png"
+              alt=""
+            />
+            <img
+              class="socialMedia__downloadIcons"
+              src="../public/ios-android/google-play.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="shopPolicy">
+          <p class="shopPolicy__text shopPolicy__rights">
+            © 2023 IMAJI COFFEE, All rights reserved
+          </p>
+          <div class="shopPolicy__blockPolicyAndTerms">
+            <a class="shopPolicy__text shopPolicy__terms" href="#"
+              >Terms and Conditions</a
+            >
+            <a class="shopPolicy__text shopPolicy__policy" href="#"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
